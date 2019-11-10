@@ -9,7 +9,8 @@ class SearchBar extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        // Todo: setup callback from parent component
+        //callback from parent component
+        this.props.onFormSubmit(this.state.term);
     };
 
     render() {
